@@ -1,4 +1,4 @@
-pacman::p_load(data.table,magrittr,stringr,textclean,tibble,tm,tictoc,pbapply)
+pacman::p_load(data.table,magrittr,stringr,textclean,tm)
 setwd(dirname(rstudioapi::getSourceEditorContext()$path))
 tf=function(dt){
   res=termFreq(dt[,unique(names)])
